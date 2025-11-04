@@ -1,7 +1,6 @@
 
 import { useState } from 'react'
 import { Crown } from 'lucide-react'
-import { AttributeType } from '@/types/scorecard'
 import type { ScorecardTemplate } from '@/types/scorecard'
 import type { ScorecardTemplateFormData } from '@/lib/validations/scorecard'
 import { ScorecardTemplatesEmptyState } from '@/components/settings/scorecard-templates-empty-state'
@@ -10,46 +9,46 @@ import { ScorecardTemplatesList } from '@/components/settings/scorecard-template
 import { toast } from 'sonner'
 
 // Mock data - replace with actual API calls
-const mockTemplates: ScorecardTemplate[] = [
-  {
-    id: '1',
-    name: 'Technical Interview',
-    description: 'Evaluate technical skills and problem-solving abilities',
-    createdAt: new Date('2024-01-15'),
-    updatedAt: new Date('2024-01-15'),
-    attributeCount: 4,
-    attributes: [
-      {
-        id: '1',
-        name: 'Technical Skills',
-        type: AttributeType.RATING,
-        isRequired: true,
-        order: 0
-      },
-      {
-        id: '2',
-        name: 'Problem Solving',
-        type: AttributeType.RATING,
-        isRequired: true,
-        order: 1
-      },
-      {
-        id: '3',
-        name: 'Communication',
-        type: AttributeType.RATING,
-        isRequired: false,
-        order: 2
-      },
-      {
-        id: '4',
-        name: 'Cultural Fit',
-        type: AttributeType.YES_NO,
-        isRequired: true,
-        order: 3
-      }
-    ]
-  }
-]
+// const mockTemplates: ScorecardTemplate[] = [
+//   {
+//     id: '1',
+//     name: 'Technical Interview',
+//     description: 'Evaluate technical skills and problem-solving abilities',
+//     createdAt: new Date('2024-01-15'),
+//     updatedAt: new Date('2024-01-15'),
+//     attributeCount: 4,
+//     attributes: [
+//       {
+//         id: '1',
+//         name: 'Technical Skills',
+//         type: AttributeType.RATING,
+//         isRequired: true,
+//         order: 0
+//       },
+//       {
+//         id: '2',
+//         name: 'Problem Solving',
+//         type: AttributeType.RATING,
+//         isRequired: true,
+//         order: 1
+//       },
+//       {
+//         id: '3',
+//         name: 'Communication',
+//         type: AttributeType.RATING,
+//         isRequired: false,
+//         order: 2
+//       },
+//       {
+//         id: '4',
+//         name: 'Cultural Fit',
+//         type: AttributeType.YES_NO,
+//         isRequired: true,
+//         order: 3
+//       }
+//     ]
+//   }
+// ]
 
 export default function ScorecardTemplatesPage() {
   const [templates, setTemplates] = useState<ScorecardTemplate[]>([])

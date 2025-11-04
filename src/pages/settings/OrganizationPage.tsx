@@ -33,11 +33,11 @@ interface CareerPage {
 }
 
 // Mock data
-const getUserData = () => ({
-  name: 'Bùi Tuấn',
-  email: 'tuan.ba@agiletechsoftware.com',
-  initials: 'BT',
-})
+// const getUserData = () => ({
+//   name: 'Bùi Tuấn',
+//   email: 'tuan.ba@agiletechsoftware.com',
+//   initials: 'BT',
+// })
 
 const getOrganization = (): Organization => ({
   id: 'cmgvkbyut1ica12viy4v4olu0',

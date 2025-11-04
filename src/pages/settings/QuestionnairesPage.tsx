@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { QuestionnairesEmptyState } from '@/components/settings/questionnaires-empty-state';
 import { QuestionnairesList } from '@/components/settings/questionnaires-list';

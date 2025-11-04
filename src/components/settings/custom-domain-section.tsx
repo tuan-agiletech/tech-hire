@@ -1,5 +1,3 @@
-'use client';
-
 import { Crown } from 'lucide-react';
 
 export default function CustomDomainSection() {

@@ -1,4 +1,4 @@
-import { FolderPlus } from 'lucide-react'
+// import { FolderPlus } from 'lucide-react'
 
 interface WorkflowsEmptyStateProps {
   onAddWorkflowGroup: () => void

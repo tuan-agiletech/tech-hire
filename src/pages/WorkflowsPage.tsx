@@ -16,7 +16,7 @@ const getWorkflowGroups = () => []
 
 export default function WorkflowsPage() {
   const user = getUserData()
-  const [workflowGroups, setWorkflowGroups] = useState(getWorkflowGroups())
+  const [workflowGroups] = useState(getWorkflowGroups())
 
   const handleAddWorkflowGroup = () => {
     console.log('Add workflow group clicked')

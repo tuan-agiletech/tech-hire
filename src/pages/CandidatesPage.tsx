@@ -17,7 +17,7 @@ const getCandidates = () => []
 
 export default function CandidatesPage() {
   const user = getUserData()
-  const [candidates, setCandidates] = useState(getCandidates())
+  const [candidates] = useState(getCandidates())
   const [activeFilters, setActiveFilters] = useState([
     { id: '1', label: 'Stage', value: 'Applied' },
   ])

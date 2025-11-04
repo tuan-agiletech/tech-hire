@@ -1,7 +1,5 @@
-'use client';
-
 import { useState } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams } from 'react-router-dom';
 import { toast } from 'sonner'
 
 const INTEGRATION_DETAILS: Record<

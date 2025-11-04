@@ -1,5 +1,3 @@
-'use client';
-
 import { Fragment, useState } from 'react';
 import { Dialog, Transition, Listbox } from '@headlessui/react';
 import { X, Check, ChevronDown, Plus, Trash2, GripVertical } from 'lucide-react';

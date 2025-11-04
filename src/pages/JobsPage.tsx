@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navbar from '@/components/navigation/navbar'
 import StarterGuide from '@/components/dashboard/starter-guide'
-import PageHeader from '@/components/ui/page-header'
+// import PageHeader from '@/components/ui/page-header'
 import Breadcrumb from '@/components/ui/breadcrumb'
 import JobsEmptyState from '@/components/jobs/jobs-empty-state'
 import JobsList from '@/components/jobs/jobs-list'
@@ -15,22 +15,22 @@ const getUserData = () => ({
 
 const getJobs = () => []
 
-const getFilters = () => ({
-  locations: [],
-  departments: [],
-  stages: [
-    { id: 'applied', name: 'Applied' },
-    { id: 'phone-screening', name: 'Phone Screening' },
-    { id: 'interview', name: 'Interview' },
-    { id: 'offer', name: 'Offer' },
-    { id: 'disqualified', name: 'Disqualified' },
-  ],
-})
+// const getFilters = () => ({
+//   locations: [],
+//   departments: [],
+//   stages: [
+//     { id: 'applied', name: 'Applied' },
+//     { id: 'phone-screening', name: 'Phone Screening' },
+//     { id: 'interview', name: 'Interview' },
+//     { id: 'offer', name: 'Offer' },
+//     { id: 'disqualified', name: 'Disqualified' },
+//   ],
+// })
 
 export default function JobsPage() {
   const user = getUserData()
-  const [jobs, setJobs] = useState(getJobs())
-  const filters = getFilters()
+  const [jobs] = useState(getJobs())
+//   const filters = getFilters()
 
   const breadcrumbItems = [
     { label: 'Jobs', href: '/jobs' },

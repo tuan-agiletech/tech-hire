@@ -1,4 +1,4 @@
-'use client'
+
 
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
@@ -8,12 +8,10 @@ import {
   CreditCard,
   Code2,
   Mail,
-  FileText,
   ClipboardList,
   Star,
   MapPin,
   Building2,
-  Link2,
   Puzzle
 } from 'lucide-react'
 

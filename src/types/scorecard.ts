@@ -17,13 +17,14 @@ export interface ScorecardAttribute {
   order: number
 }
 
-export enum AttributeType {
+enum AttributeType {
   RATING = 'rating',
   YES_NO = 'yes-no',
   TEXT = 'text',
   MULTI_SELECT = 'multi-select',
   SINGLE_SELECT = 'single-select'
 }
+export { AttributeType }
 
 export interface ScorecardTemplateFormData {
   name: string

@@ -1,6 +1,4 @@
-'use client'
-
-import { Plus, Download, Database } from 'lucide-react'
+import { Plus, Download } from 'lucide-react'
 import ActionList from '@/components/ui/action-list'
 
 interface JobsEmptyStateProps {

@@ -5,7 +5,6 @@ import {
   Settings, 
   Search, 
   ChevronDown,
-  Sparkles 
 } from 'lucide-react'
 
 interface User {

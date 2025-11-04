@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { MoreVertical, Mail, Phone, MapPin } from 'lucide-react'
+import { MoreVertical, Mail, Phone } from 'lucide-react'
 
 interface Candidate {
   id: string

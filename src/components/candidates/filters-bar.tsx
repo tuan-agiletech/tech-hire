@@ -1,8 +1,3 @@
-'use client'
-
-import { useState } from 'react'
-import { Filter, X } from 'lucide-react'
-
 interface FilterOption {
   id: string
   label: string
@@ -20,7 +15,7 @@ interface FiltersBarProps {
 export default function FiltersBar({
   activeFilters,
   onClearAll,
-  onRemoveFilter,
+  // onRemoveFilter,
   onOpenFilters,
   onOpenColumns,
 }: FiltersBarProps) {

@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { subdomainSchema } from "@/lib/validations/domain";
 import type { SubdomainFormData } from "@/types/domain";
 import { toast } from 'sonner'
-import { FormInput } from "@/components/ui/form-input";
 
 interface SubdomainFormProps {
   currentSubdomain: string;
@@ -17,7 +16,6 @@ export default function SubdomainForm({
   const {
     register,
     handleSubmit,
-    formState: { errors },
   } = useForm<SubdomainFormData>({
     resolver: zodResolver(subdomainSchema),
     defaultValues: {

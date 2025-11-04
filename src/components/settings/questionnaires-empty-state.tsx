@@ -1,5 +1,3 @@
-'use client';
-
 import { FolderPlus, Plus } from 'lucide-react';
 
 interface QuestionnairesEmptyStateProps {

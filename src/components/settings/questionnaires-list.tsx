@@ -1,5 +1,3 @@
-'use client';
-
 import { Pencil, Trash2 } from 'lucide-react';
 import type { Questionnaire } from '@/types/questionnaire';
 import { toast } from 'sonner';

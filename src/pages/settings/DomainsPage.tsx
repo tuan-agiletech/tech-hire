@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import CustomDomainSection from '@/components/settings/custom-domain-section';
 import SubdomainForm from '@/components/settings/subdomain-form';
